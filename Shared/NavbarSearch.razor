@@ -1,0 +1,20 @@
+﻿<div class="ml-3">
+    <div class="input-group input-group-sm">
+        @*<p>Current count: @currentCount</p>*@
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+            <button class="btn btn-navbar" @onclick="SearchButton">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private int currentCount = 0;
+
+    private void SearchButton()
+    {
+        currentCount++;
+    }
+}
